@@ -1,6 +1,8 @@
 let attempts = 1
 let randomNumber
 
+const main = document.querySelector("main")
+
 const guessButton = document.querySelector("#guess-button")
 const resetButton = document.querySelector("#reset-button")
 
@@ -25,9 +27,14 @@ function guessANumber(event) {
     secondBox.classList.remove("hidden")
     document.querySelector(".attempts").innerText = attempts
   } else {
+    main.classList.toggle("shake")
     secondBox.classList.add("hidden")
     document.querySelector("#inputNumber").value = ""
     attempts++
+
+    setTimeout(() => {
+      main.classList.remove("shake")
+    }, 500)
   }
 }
 
