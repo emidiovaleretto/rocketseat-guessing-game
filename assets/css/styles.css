@@ -28,6 +28,7 @@ button {
   color: #fff;
   border: none;
   border-radius: 0 4px 4px 0;
+  outline: 1px solid rgba(113, 116, 200, 0.8);
   background: #7879f1;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
@@ -125,4 +126,12 @@ button:hover {
 .box-2 button {
   width: 50%;
   border-radius: 4px;
+}
+
+.attempts {
+  padding: 0 1.6rem;
+  border: 1px solid rgba(113, 116, 200, 0.8);
+  border-radius: 4px;
+  background-color: #34355b;
+  color: #fff;
 }
