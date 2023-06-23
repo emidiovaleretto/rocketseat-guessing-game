@@ -3,26 +3,39 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: 1.6rem;
   background: linear-gradient(315deg, #c2e9fb 0%, #a1c4fd 100%);
-
   display: grid;
   place-items: center;
-
   height: 100vh;
 }
 
 body,
 input,
 button {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
+}
+
+button {
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background: #7879f1;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  padding: 1.6rem;
+}
+
+button:hover {
+  background: #6565cc;
 }
 
 .container-top {
@@ -31,7 +44,7 @@ button {
   height: 3.2rem;
   width: 100%;
   background: #2c2c54;
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0 0;
 }
 
 .container-top span {
@@ -55,13 +68,12 @@ button {
 
 .container {
   display: flex;
-  padding: 6.4rem 7.2rem;
   flex-direction: column;
   align-items: center;
-
-  border-radius: 0px 0px 6px 6px;
+  border-radius: 0 0 6px 6px;
   background: #fff;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 6.4rem 7.2rem;
 }
 
 .hidden {
@@ -79,57 +91,31 @@ button {
   font-size: 2.4rem;
   font-weight: 600;
   color: #34355b;
-
   margin-bottom: 1.6rem;
 }
 
 .box-1 p {
   color: rgba(52, 53, 91, 0.8);
   line-height: 1.5rem;
-
   margin-bottom: 4rem;
 }
 
 .input-group {
   display: flex;
-  padding: 1.6rem;
   justify-content: center;
   align-items: center;
-}
-
-.box-1 input,
-.box-1 button,
-.box-2 button {
   padding: 1.6rem;
-  align-items: center;
-
-  border: none;
-  outline: 1px solid rgba(113, 116, 200, 0.8);
 }
 
 .box-1 input {
+  align-items: center;
+  border: none;
+  outline: 1px solid rgba(113, 116, 200, 0.8);
   color: #34355b;
-
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   background: #dce2e9;
-
   width: 6rem;
-}
-
-.box-1 button,
-.box-2 button {
-  font-weight: 700;
-  color: #fff;
-  border-radius: 0px 4px 4px 0px;
-  background: #7879f1;
-
-  cursor: pointer;
-  transition: background-color 0.1s ease-in-out;
-}
-
-.box-1 button:hover,
-.box-2 button:hover {
-  background: #6565cc;
+  padding: 1.6rem;
 }
 
 .box-2 h2 {
